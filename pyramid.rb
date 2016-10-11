@@ -40,15 +40,17 @@ def chains
         
 
 end
-
-
-    
-def ud
+  
+  
+  def ud
      puts "How tall would you like the pyramid to be? (Any number between 0 and 23)"
      height =gets.chomp.to_i
      puts "How many pyramids would you like?"
      c = gets.chomp.to_i
-      c.times { 1.times {
+     u = 1
+      c.times { 
+       if u == 1 
+       	1.times {
      
           n = height
           a = 0
@@ -62,6 +64,8 @@ def ud
             
             }
        } 
+       u = 2
+       else 
       1.times {
              x = height
               a = 0
@@ -74,10 +78,11 @@ def ud
             
 }
 }
+  end
 }
            
             
-            
+         
       
         
 
