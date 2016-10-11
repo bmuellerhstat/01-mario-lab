@@ -32,7 +32,7 @@ def invert
       t=t + 1
   }
 end
-
+ 
 invert()
 chaining()
 #height()
