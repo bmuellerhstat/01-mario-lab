@@ -28,7 +28,7 @@ mario_loop()
 
 
 
-def chaining
+def part_3
    t = 1
   puts "How tall do you want the blocks to be?"
   y = gets.chomp.to_i
@@ -38,4 +38,4 @@ def chaining
      t=t + 1
   }
  end
- chaining()
+ part_3()
