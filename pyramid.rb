@@ -12,7 +12,6 @@ end
 def pyrimid_2
   puts "How tall would you like the pyramid to be?"
 q= gets.chomp.to_i
-i=0
 1.upto(q) { |i| puts " "*(q-i)+"#"*i*1+" "+"#"*i*1 }
 end
 pyrimid_2
