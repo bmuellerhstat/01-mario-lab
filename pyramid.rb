@@ -20,23 +20,30 @@ def how_tall(number)
 end
 
 def height_and_how_many(number,y)
-    x = 1
     if (number < 23)
-        number.times {
-            puts "#{" "*(number-1)} #{"#"*x + "  " + "#"*x}"
+        y.times {
+            x = 1
+            amount = number
+        amount.times {
+            puts "#{" "*(amount-1)} #{"#"*x + "  " + "#"*x}"
             x += 1
-            number -= 1
+            amount -= 1
+        }
         }
     else
         puts "That's too many!"
     end
 end
 
-# mario_blocks
+def reversed
+    
+end
 
-# puts "How tall would you like the pyramid to be?"
-# height = gets.chomp.to_i
-# how_tall(height)
+mario_blocks
+
+puts "How tall would you like the pyramid to be?"
+height = gets.chomp.to_i
+how_tall(height)
 
 puts "How tall would you like the pyramid to be?"
 tall = gets.chomp.to_i
