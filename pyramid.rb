@@ -13,8 +13,9 @@ def pyramid2
      var = 1
     user_input.times do
        
-    puts "#"*var + " " + "#"*var
+    puts " "*(user_input-1) + "#"*var + " " + "#"*var
     var += 1
+    user_input= user_input-1
 end
 end
 pyramid2
