@@ -35,8 +35,20 @@ def height_and_how_many(number,y)
     end
 end
 
-def reversed
-    
+def reversed(number,)
+    if (number < 23)
+        y.times {
+            x = 1
+            amount = number
+        amount.times {
+            puts "#{" "*(amount-1)} #{"#"*x + "  " + "#"*x}"
+            x += 1
+            amount -= 1
+        }
+        }
+    else
+        puts "That's too many!"
+    end
 end
 
 mario_blocks
