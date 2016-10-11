@@ -39,3 +39,12 @@ def part_3
   }
  end
  part_3()
+ 
+def mario_3()
+    print "how many pyramids do you want?"
+    h = gets.chomp.to_i
+    
+    h.times{puts mario}
+    
+end
+mario_3()
