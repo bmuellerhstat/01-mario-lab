@@ -9,9 +9,14 @@ end
 
 def tall_question
     puts "How tall would you like to make your pyramid?"
-    #height = gets.chomp
+    user_height = gets.chomp.to_i
+    puts "how many of the pyramids do you want?"
+    chaining = gets.chomp.to_i
+    pyramid_chain(user_height, chaining)
 end
 
-def chained_pyramids
-    puts ""
+def chained_pyramids(height, chain)
+    chain.times do 
+        pyramid(height)
+    end
 end
