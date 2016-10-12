@@ -7,13 +7,13 @@ def mario_blocks(height)
     end
 end
 
-def tall_question
+
     puts "How tall would you like to make your pyramid?"
     user_height = gets.chomp.to_i
     puts "how many of the pyramids do you want?"
     chaining = gets.chomp.to_i
     pyramid_chain(user_height, chaining)
-end
+
 
 def chained_pyramids(height, chain)
     chain.times do 
