@@ -20,3 +20,23 @@ def chained_pyramids(height, chain)
         pyramid(height)
     end
 end
+
+def pyramid_reverse(height, chain)
+    reverse = 1
+    chain.times do
+        if reverse == 1
+            level = 1
+            height.times do
+                puts " "*(height-level) + "#"*level + " " + "#"*level
+                level += 1
+            end
+        else
+            reverse = 1
+            level = height
+            height.times do
+                puts " "*(height-level) + "#"*level + " " + "#"*level
+                level -= 1
+            end
+        end
+    end
+end
